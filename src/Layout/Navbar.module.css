@@ -1,0 +1,115 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 50px;
+
+  background-color: #f4f5f1;
+  transition: all 0.3s ease;
+}
+.listItem li {
+  list-style: none;
+  font-weight: 100;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  padding: 5px;
+  border-radius: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.listItem li:hover {
+  background-color: #f0f8fb;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.listItem {
+  display: flex;
+  gap: 40px;
+}
+
+.nav button {
+  border: 0;
+  border-radius: 100px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 13px;
+  font-weight: 100;
+  background-color: #f0f8fb;
+}
+.nav button:hover {
+  border: solid #fff 0.1px;
+}
+.toggle .menu {
+  display: none;
+}
+.subBtnMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 780px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: centers;
+    gap: 5px;
+    height: 10px;
+  }
+  .hideBtnLogo {
+    display: none;
+  }
+  .menu div {
+    width: 21px;
+    height: 2.5px;
+    background-color: black;
+  }
+  .listItem {
+    display: none;
+    gap: 24px;
+  }
+  /* .listItemOpen {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f5f1;
+  } */
+  .listItemOpen li {
+    padding: 20px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .listItemOpen li:hover {
+    border-bottom: solid black 0.1px;
+  }
+  .d1 {
+    transform: rotate(-45deg);
+    transition: all 0.3s ease;
+  }
+  .d2 {
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+  }
+  .navOpen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f5f1;
+    transition: all 0.3s ease;
+  }
+  .subBtnMenuOpen {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+    width: 100%;
+  }
+}
