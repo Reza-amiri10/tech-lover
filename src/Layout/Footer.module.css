@@ -6,6 +6,10 @@
   width: 100%;
   bottom: 0;
 }
+.footerContiner h3 {
+  font-size: 2rem;
+  font-weight: 300;
+}
 .footerItems {
   display: flex;
   flex-direction: column;
@@ -15,13 +19,44 @@
   padding: 40px;
 }
 .footerItems p {
+  font-size: 0.9rem;
+  font-weight: 100;
   padding-left: 20px;
   padding-right: 20px;
 }
 .socialMediaItems {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
+}
+.socialMediaItems img {
+  width: 20px;
+  padding: 4px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.socialMediaItems img:hover {
+  width: 22px;
+}
+.inputBtn input {
+  border: 0;
+  padding: 0.6rem;
+  width: 200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+.inputBtn button {
+  padding: 0.6rem;
+  border: 0;
+  border-radius: 100px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.inputBtn button:hover {
+  padding: 0.7rem;
 }
 @media (max-width: 790px) {
   .footerItems {

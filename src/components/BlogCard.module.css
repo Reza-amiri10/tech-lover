@@ -5,6 +5,8 @@
   width: 100%;
   max-width: 366px;
   min-width: 200;
+  overflow: scroll;
+  height: 650px;
   padding: 10px;
   border-radius: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -14,4 +16,24 @@
   max-width: 366px;
   min-width: 200px;
   border-radius: 10px;
+}
+.blogBox h3 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.blogBox p {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+.blogBox button {
+  border: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  background-color: #fff;
+  margin-top: 12px;
 }

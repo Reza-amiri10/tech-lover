@@ -11,7 +11,7 @@ export default function Footer() {
           Stay updated with the latest news, trends, and breakthroughs in
           technology — delivered fresh to keep you informed and ahead.
         </p>
-        <div>
+        <div className={style.inputBtn}>
           <input placeholder="Enter your email..."></input>
           <button>Subscribe</button>
         </div>
@@ -20,11 +20,21 @@ export default function Footer() {
           Terms and Conditions.
         </p>
         <ul className={style.socialMediaItems}>
-          <li>F</li>
-          <li>I</li>
-          <li>X</li>
-          <li>Li</li>
-          <li>U</li>
+          <li>
+            <img alt="facebook-logo" src="/images/facebook.png" />
+          </li>
+          <li>
+            <img alt="instagram logo" src="/images/instagram.png" />
+          </li>
+          <li>
+            <img alt="x logo" src="/images/twitter.png" />
+          </li>
+          <li>
+            <img alt="linkedin logo" src="/images/linkedin.png" />
+          </li>
+          <li>
+            <img alt="youtube" src="/images/youtube.png" />
+          </li>
         </ul>
 
         <div>

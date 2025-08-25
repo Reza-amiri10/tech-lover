@@ -1,22 +1,28 @@
 import style from "./BlogCard.module.css";
 
-export default function BlogCard() {
+export default function BlogCard({
+  category,
+  title,
+  description,
+  author,
+  date,
+  readTime,
+  image,
+}) {
   return (
     <div className={style.blogBox}>
-      <img alt="rise-5g" src="/images/rise-5g.jpg" width={400} height={300} />
-      <di>
-        <h3>Category</h3>
-        <h3>The Rise of 5G: Transforming Mobile Connectivity and Beyond</h3>
-        <p>
-          Virtual Reality (VR) has come a long way since its inception,
-          transforming from a sci-fi concept to a tangible technology that is
-          revolutionizing various industries
-        </p>
+      <img alt="rise-5g" src={image} width={400} height={300} />
+      <div>
+        <button>{category}</button>
+        <h3>{title}</h3>
+        <p>{description}</p>
         <div>
-          <p>Author</p>
-          <p>July 19,2025 . 5 min read</p>
+          <p>{author}</p>
+          <p>
+            {date} . {readTime}
+          </p>
         </div>
-      </di>
+      </div>
     </div>
   );
 }

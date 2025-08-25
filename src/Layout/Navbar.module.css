@@ -11,6 +11,10 @@
   position: fixed;
   width: 100%;
 }
+.nav p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
 .listItem li {
   list-style: none;
   font-weight: 100;
@@ -36,9 +40,9 @@
   border-radius: 100px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 7px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 13px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 14px;
   font-weight: 100;
   background-color: #f0f8fb;
 }
