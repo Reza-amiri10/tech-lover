@@ -1,0 +1,17 @@
+.blogBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  max-width: 366px;
+  min-width: 200;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.blogBox img {
+  width: 100%;
+  max-width: 366px;
+  min-width: 200px;
+  border-radius: 10px;
+}
