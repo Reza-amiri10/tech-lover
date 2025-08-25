@@ -8,7 +8,7 @@ const blogPosts = [
     author: "Benjamin Rivera",
     date: "August 7, 2025",
     readTime: "6 min read",
-    image: "/images/cybersecurity.jpg",
+    image: "./images/cybersecurity.jpg",
   },
   {
     id: 2,
