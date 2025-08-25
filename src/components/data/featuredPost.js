@@ -8,7 +8,7 @@ const featuredPost = [
     author: "Benjamin Rivera",
     date: "August 7, 2025",
     readTime: "6 min read",
-    image: "/images/cybersecurity.jpg",
+    image: "./images/cybersecurity.jpg",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const featuredPost = [
     author: "Jane Smith",
     date: "August 24, 2025",
     readTime: "6 min read",
-    image: "/images/ai-chatbots.jpg",
+    image: "./images/ai-chatbots.jpg",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const featuredPost = [
     author: "Alex Johnson",
     date: "August 23, 2025",
     readTime: "4 min read",
-    image: "/images/smartwatch-ai.jpg",
+    image: "./images/smartwatch-ai.jpg",
   },
 ];
 

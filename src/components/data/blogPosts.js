@@ -19,7 +19,7 @@ const blogPosts = [
     author: "Jane Smith",
     date: "August 24, 2025",
     readTime: "6 min read",
-    image: "/images/ai-chatbots.jpg",
+    image: "./images/ai-chatbots.jpg",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const blogPosts = [
     author: "Alex Johnson",
     date: "August 23, 2025",
     readTime: "4 min read",
-    image: "/images/smartwatch-ai.jpg",
+    image: "./images/smartwatch-ai.jpg",
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const blogPosts = [
     author: "Maria Lee",
     date: "August 22, 2025",
     readTime: "5 min read",
-    image: "/images/foldable-phone.jpg",
+    image: "./images/foldable-phone.jpg",
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const blogPosts = [
     author: "David Kim",
     date: "August 21, 2025",
     readTime: "7 min read",
-    image: "/images/ai-healthcare.jpg",
+    image: "./images/ai-healthcare.jpg",
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ const blogPosts = [
     author: "Emma Brown",
     date: "August 20, 2025",
     readTime: "3 min read",
-    image: "/images/wireless-earbuds.jpg",
+    image: "./images/wireless-earbuds.jpg",
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ const blogPosts = [
     author: "Liam Wilson",
     date: "August 19, 2025",
     readTime: "8 min read",
-    image: "/images/quantum-computing.jpg",
+    image: "./images/quantum-computing.jpg",
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ const blogPosts = [
     author: "Sophia Martinez",
     date: "August 18, 2025",
     readTime: "5 min read",
-    image: "/images/generative-ai.jpg",
+    image: "./images/generative-ai.jpg",
   },
   {
     id: 9,
@@ -96,7 +96,7 @@ const blogPosts = [
     author: "Noah Anderson",
     date: "August 17, 2025",
     readTime: "4 min read",
-    image: "/images/smart-home.jpg",
+    image: "./images/smart-home.jpg",
   },
   {
     id: 10,
@@ -107,7 +107,7 @@ const blogPosts = [
     author: "Olivia Thomas",
     date: "August 16, 2025",
     readTime: "6 min read",
-    image: "/images/electric-vehicles.jpg",
+    image: "./images/electric-vehicles.jpg",
   },
   {
     id: 11,
@@ -118,7 +118,7 @@ const blogPosts = [
     author: "Ethan Clark",
     date: "August 15, 2025",
     readTime: "5 min read",
-    image: "/images/ai-finance.jpg",
+    image: "./images/ai-finance.jpg",
   },
   {
     id: 12,
@@ -129,7 +129,7 @@ const blogPosts = [
     author: "Ava Lewis",
     date: "August 14, 2025",
     readTime: "4 min read",
-    image: "/images/ar-glasses.jpg",
+    image: "./images/ar-glasses.jpg",
   },
   {
     id: 13,
@@ -140,7 +140,7 @@ const blogPosts = [
     author: "Mason Young",
     date: "August 13, 2025",
     readTime: "6 min read",
-    image: "/images/edge-computing.jpg",
+    image: "./images/edge-computing.jpg",
   },
   {
     id: 14,
@@ -151,7 +151,7 @@ const blogPosts = [
     author: "Isabella Hall",
     date: "August 12, 2025",
     readTime: "7 min read",
-    image: "/images/ai-ethics.jpg",
+    image: "./images/ai-ethics.jpg",
   },
   {
     id: 15,
@@ -162,7 +162,7 @@ const blogPosts = [
     author: "Lucas Scott",
     date: "August 11, 2025",
     readTime: "5 min read",
-    image: "/images/nextgen-laptop.webp",
+    image: "./images/nextgen-laptop.webp",
   },
   {
     id: 16,
@@ -173,7 +173,7 @@ const blogPosts = [
     author: "Mia Adams",
     date: "August 10, 2025",
     readTime: "6 min read",
-    image: "/images/blockchain.jpg",
+    image: "./images/blockchain.jpg",
   },
   {
     id: 17,
@@ -184,7 +184,7 @@ const blogPosts = [
     author: "James Turner",
     date: "August 9, 2025",
     readTime: "4 min read",
-    image: "/images/voice-assistants.jpg",
+    image: "./images/voice-assistants.jpg",
   },
   {
     id: 18,
@@ -195,7 +195,7 @@ const blogPosts = [
     author: "Charlotte Perez",
     date: "August 8, 2025",
     readTime: "5 min read",
-    image: "/images/drones.jpg",
+    image: "./images/drones.jpg",
   },
 ];
 
