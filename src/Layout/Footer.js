@@ -21,19 +21,34 @@ export default function Footer() {
         </p>
         <ul className={style.socialMediaItems}>
           <li>
-            <img alt="facebook-logo" src="/images/facebook.png" />
+            <img
+              alt="facebook logo"
+              src={`${process.env.PUBLIC_URL}/images/facebook.png`}
+            />
           </li>
           <li>
-            <img alt="instagram logo" src="/images/instagram.png" />
+            <img
+              alt="instagram logo"
+              src={`${process.env.PUBLIC_URL}/images/instagram.png`}
+            />
           </li>
           <li>
-            <img alt="x logo" src="/images/twitter.png" />
+            <img
+              alt="x logo"
+              src={`${process.env.PUBLIC_URL}/images/twitter.png`}
+            />
           </li>
           <li>
-            <img alt="linkedin logo" src="/images/linkedin.png" />
+            <img
+              alt="linkedin logo"
+              src={`${process.env.PUBLIC_URL}/images/linkedin.png`}
+            />
           </li>
           <li>
-            <img alt="youtube" src="/images/youtube.png" />
+            <img
+              alt="youtube logo"
+              src={`${process.env.PUBLIC_URL}/images/youtube.png`}
+            />
           </li>
         </ul>
 

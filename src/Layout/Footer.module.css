@@ -26,8 +26,13 @@
 }
 .socialMediaItems {
   display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
   list-style: none;
+  padding: 0;
 }
 .socialMediaItems img {
   width: 20px;
