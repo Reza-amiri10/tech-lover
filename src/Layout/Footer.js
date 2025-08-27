@@ -12,7 +12,10 @@ export default function Footer() {
           technology — delivered fresh to keep you informed and ahead.
         </p>
         <div className={style.inputBtn}>
-          <input placeholder="Enter your email..."></input>
+          <div className={style.inputBox}>
+            <input className={style.name} placeholder="Name.."></input>
+            <input className={style.email} placeholder="Email..."></input>
+          </div>
           <button>Subscribe</button>
         </div>
         <p>

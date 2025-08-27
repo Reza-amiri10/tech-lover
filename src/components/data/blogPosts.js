@@ -162,7 +162,7 @@ const blogPosts = [
     author: "Lucas Scott",
     date: "August 11, 2025",
     readTime: "5 min read",
-    image: `${process.env.PUBLIC_URL}/images/nextgen-laptop.jpg`,
+    image: `${process.env.PUBLIC_URL}/images/nextgen-laptop.webp`,
   },
   {
     id: 16,
