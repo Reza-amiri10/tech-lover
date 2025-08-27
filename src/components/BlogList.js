@@ -1,14 +1,13 @@
 import style from "./BlogList.module.css";
-import blogPosts from "./data/blogPosts";
 import BlogCard from "./BlogCard";
 
-export default function BlogList() {
+export default function BlogList({ blogPosts }) {
   const blogPostGenerator = blogPosts.map((item) => (
     <BlogCard
       key={item.id}
       category={item.category}
       title={item.title}
-      description={item.description}
+      description={item.description.slice(0, 150) + "..."}
       author={item.author}
       date={item.date}
       readTime={item.readTime}

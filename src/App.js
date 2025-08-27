@@ -4,14 +4,18 @@ import BlogList from "./components/BlogList";
 import FeaturedCardList from "./components/FeaturedCardList";
 import Footer from "./Layout/Footer";
 import MiddleFooter from "./Layout/MiddleFooter";
+import blogPosts from "./components/data/blogPosts";
+
+const featuredData = blogPosts.slice(-3);
+
 function App() {
   return (
     <div className="App">
       <Navbar />
       <div className="main">
-        <FeaturedCardList />
+        <FeaturedCardList featuredPost={featuredData} />
         <MiddleFooter />
-        <BlogList />
+        <BlogList blogPosts={blogPosts} />
       </div>
       <Footer />
     </div>
