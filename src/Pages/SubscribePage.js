@@ -1,7 +1,11 @@
-import style from "./Footer.module.css";
-export default function Footer() {
+import style from "./SubscribePage.module.css";
+import { useLocation } from "react-router-dom";
+import Footer from "../Layout/Footer";
+export default function SubscribePage() {
   const date = new Date();
   const year = date.getFullYear();
+  const location = useLocation();
+  const hideFooter = location.pathname === "/subscribe";
 
   return (
     <footer className={style.footerContiner}>
@@ -60,6 +64,7 @@ export default function Footer() {
           reserved.
         </p>
       </div>
+      {!hideFooter && <Footer />}
     </footer>
   );
 }

@@ -1,11 +1,16 @@
 .blogCardContiner {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 1200px;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  width: 100%;
+  margin-top: 10px;
   margin-bottom: 40px;
   gap: 20px;
+}
+.latesBContiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
 }

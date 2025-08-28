@@ -1,5 +1,6 @@
 import { useState } from "react";
-import styles from "./Navbar.module.css";
+import style from "./Navbar.module.css";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,23 +15,71 @@ export default function Navbar() {
     }
   };
   return (
-    <nav className={isMenuOpen ? styles.navOpen : styles.nav}>
-      <p className={isMenuOpen ? styles.hideBtnLogo : ""}>Tech Lover</p>
-      <ul className={isMenuOpen ? styles.listItemOpen : styles.listItem}>
-        <li onClick={handleMenuList}>Home</li>
-        <li onClick={handleMenuList}>Blog</li>
-        <li onClick={handleMenuList}>Categories ⌄</li>
-        <li onClick={handleMenuList}>About</li>
-        <li onClick={handleMenuList}>Contact</li>
-      </ul>
-      <div className={isMenuOpen ? styles.subBtnMenuOpen : styles.subBtnMenu}>
-        <button className={isMenuOpen ? styles.hideBtnLogo : ""}>
-          Subscribe
-        </button>
+    <nav className={isMenuOpen ? style.navOpen : style.nav}>
+      <p className={isMenuOpen ? style.hideBtnLogo : ""}>Tech Lover</p>
+      <div className={isMenuOpen ? style.listItemOpen : style.listItem}>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? style.activeLink : style.link
+          }
+          onClick={handleMenuList}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/blogs"
+          className={({ isActive }) =>
+            isActive ? style.activeLink : style.link
+          }
+          onClick={handleMenuList}
+        >
+          Blog
+        </NavLink>
+        <NavLink
+          to="/categories"
+          className={({ isActive }) =>
+            isActive ? style.activeLink : style.link
+          }
+          onClick={handleMenuList}
+        >
+          Categories ⌄
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            isActive ? style.activeLink : style.link
+          }
+          onClick={handleMenuList}
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive ? style.activeLink : style.link
+          }
+          onClick={handleMenuList}
+        >
+          Contact
+        </NavLink>
+      </div>
+      <div className={isMenuOpen ? style.subBtnMenuOpen : style.subBtnMenu}>
+        <NavLink
+          to="/subscribe"
+          className={({ isActive }) =>
+            isActive ? style.activeLinkBtn : style.link
+          }
+          onClick={handleMenuList}
+        >
+          <button className={isMenuOpen ? style.hideBtnLogo : ""}>
+            Subscribe
+          </button>
+        </NavLink>
 
-        <div onClick={handleMenuClick} className={styles.menu}>
-          <div className={isMenuOpen ? styles.d1 : ""}></div>
-          <div className={isMenuOpen ? styles.d2 : ""}></div>
+        <div onClick={handleMenuClick} className={style.menu}>
+          <div className={isMenuOpen ? style.d1 : ""}></div>
+          <div className={isMenuOpen ? style.d2 : ""}></div>
         </div>
       </div>
     </nav>

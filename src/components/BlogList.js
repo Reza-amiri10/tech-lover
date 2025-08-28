@@ -14,5 +14,9 @@ export default function BlogList({ blogPosts }) {
       image={item.image}
     />
   ));
-  return <div className={style.blogCardContiner}>{blogPostGenerator}</div>;
+  return (
+    <div className={style.latesBContiner}>
+      <div className={style.blogCardContiner}>{blogPostGenerator}</div>
+    </div>
+  );
 }

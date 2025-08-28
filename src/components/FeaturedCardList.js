@@ -14,5 +14,10 @@ export default function FeaturedCardList({ featuredPost }) {
       image={item.image}
     />
   ));
-  return <div className={style.featuredCardContiner}>{featuredData}</div>;
+  return (
+    <div className={style.featuredCardContiner}>
+      <h3>Featured Blogs</h3>
+      {featuredData}
+    </div>
+  );
 }

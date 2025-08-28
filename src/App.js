@@ -1,24 +1,32 @@
-import "./App.css";
-import Navbar from "./Layout/Navbar";
-import BlogList from "./components/BlogList";
-import FeaturedCardList from "./components/FeaturedCardList";
-import Footer from "./Layout/Footer";
-import MiddleFooter from "./Layout/MiddleFooter";
-import blogPosts from "./components/data/blogPosts";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Layout from "./Layout/Layout";
+import HomePage from "./Pages/HomePage";
+import BlogsPage from "./Pages/BlogsPage";
+import SubscribePage from "./Pages/SubscribePage";
+import blogPosts from "./data/blogPosts";
 
 const featuredData = blogPosts.slice(-3);
+const latestBlogGenerator = blogPosts.slice(0, 6);
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <div className="main">
-        <FeaturedCardList featuredPost={featuredData} />
-        <MiddleFooter />
-        <BlogList blogPosts={blogPosts} />
-      </div>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route
+            path="/"
+            element={
+              <HomePage
+                featuredData={featuredData}
+                latestBlogGenerator={latestBlogGenerator}
+              />
+            }
+          />
+          <Route path="/blogs" element={<BlogsPage />} />
+          <Route path="/subscribe" element={<SubscribePage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,9 @@
+.main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.main h3 {
+  text-align: center;
+}
