@@ -9,7 +9,7 @@ function Layout() {
   return (
     <>
       <Navbar />
-      <main style={{ minHeight: "70vh", padding: "20px" }}>
+      <main style={{ minHeight: "70vh" }}>
         <Outlet />
       </main>
       {!hideFooter && <Footer />}

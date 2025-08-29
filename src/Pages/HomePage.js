@@ -10,7 +10,7 @@ export default function HomePage({ featuredData, latestBlogGenerator }) {
       <div className={style.main}>
         <FeaturedCardList featuredPost={featuredData} />
         <MiddleFooter />
-        <h3>Latest blogs</h3>
+        <h3 className={style.latestTitle}>Latest blogs</h3>
         <BlogList blogPosts={latestBlogGenerator} />
       </div>
     </div>
