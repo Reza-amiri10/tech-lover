@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/tech-lover/static/css/main.9968e5e4.css",
-    "main.js": "/tech-lover/static/js/main.e239e253.js",
+    "main.css": "/tech-lover/static/css/main.692cb45d.css",
+    "main.js": "/tech-lover/static/js/main.c5f494e4.js",
     "index.html": "/tech-lover/index.html",
-    "main.9968e5e4.css.map": "/tech-lover/static/css/main.9968e5e4.css.map",
-    "main.e239e253.js.map": "/tech-lover/static/js/main.e239e253.js.map"
+    "main.692cb45d.css.map": "/tech-lover/static/css/main.692cb45d.css.map",
+    "main.c5f494e4.js.map": "/tech-lover/static/js/main.c5f494e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.9968e5e4.css",
-    "static/js/main.e239e253.js"
+    "static/css/main.692cb45d.css",
+    "static/js/main.c5f494e4.js"
   ]
 }
