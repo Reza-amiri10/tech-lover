@@ -1,6 +1,6 @@
 import { useState } from "react";
 import style from "./Navbar.module.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,21 +9,22 @@ export default function Navbar() {
     setIsMenuOpen((prev) => !prev);
   };
 
-  const handleMenuList = () => {
-    if (isMenuOpen) {
-      setIsMenuOpen(false);
-    }
-  };
   return (
     <nav className={isMenuOpen ? style.navOpen : style.nav}>
-      <p className={isMenuOpen ? style.hideBtnLogo : ""}>Tech Lover</p>
+      <NavLink
+        className={isMenuOpen ? style.hideBtnLogo : style.btnLogo}
+        to="/"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        Tech Lover
+      </NavLink>
       <div className={isMenuOpen ? style.listItemOpen : style.listItem}>
         <NavLink
           to="/"
           className={({ isActive }) =>
             isActive ? style.activeLink : style.link
           }
-          onClick={handleMenuList}
+          onClick={() => setIsMenuOpen(false)}
         >
           Home
         </NavLink>
@@ -32,25 +33,42 @@ export default function Navbar() {
           className={({ isActive }) =>
             isActive ? style.activeLink : style.link
           }
-          onClick={handleMenuList}
+          onClick={() => setIsMenuOpen(false)}
         >
           Blog
         </NavLink>
-        <NavLink
-          to="/categories"
-          className={({ isActive }) =>
-            isActive ? style.activeLink : style.link
-          }
-          onClick={handleMenuList}
-        >
-          Categories ⌄
-        </NavLink>
+        <div className={style.dropdown}>
+          <span className={style.dropbtn}>Categories ▾</span>
+          <div className={style.dropdownContent}>
+            <Link
+              key="tech"
+              to="/category/tech"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Technology
+            </Link>
+            <Link
+              key="ai"
+              to="/category/ai"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              AI
+            </Link>
+            <Link
+              key="gadgets"
+              to="/category/gadgets"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Gadgets
+            </Link>
+          </div>
+        </div>
         <NavLink
           to="/about"
           className={({ isActive }) =>
             isActive ? style.activeLink : style.link
           }
-          onClick={handleMenuList}
+          onClick={() => setIsMenuOpen(false)}
         >
           About
         </NavLink>
@@ -59,7 +77,7 @@ export default function Navbar() {
           className={({ isActive }) =>
             isActive ? style.activeLink : style.link
           }
-          onClick={handleMenuList}
+          onClick={() => setIsMenuOpen(false)}
         >
           Contact
         </NavLink>
@@ -70,7 +88,7 @@ export default function Navbar() {
           className={({ isActive }) =>
             isActive ? style.activeLinkBtn : style.link
           }
-          onClick={handleMenuList}
+          onClick={() => setIsMenuOpen(false)}
         >
           <button className={isMenuOpen ? style.hideBtnLogo : ""}>
             Subscribe

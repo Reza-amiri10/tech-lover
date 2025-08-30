@@ -16,8 +16,8 @@
 /* Image wraps to the left */
 .blogImage {
   float: left; /* put image on left side */
-  width: 450px; /* fixed size */
-  height: auto;
+  width: 400px; /* fixed size */
+  max-height: 350px;
   margin: 0 20px 20px 0; /* space around image */
   border-radius: 10px;
   object-fit: cover;
@@ -26,14 +26,17 @@
 /* Headings */
 .blogDetailBox h3 {
   margin: 10px 0;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
 /* Text */
-.blogDetailBoxp {
+.blogDetailBox p {
   margin: 8px 0;
   color: #444;
   text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 100;
 }
 
 /* Responsive: stack image on small screens */

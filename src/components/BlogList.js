@@ -5,6 +5,7 @@ export default function BlogList({ blogPosts }) {
   const blogPostGenerator = blogPosts.map((item) => (
     <BlogCard
       key={item.id}
+      id={item.id}
       category={item.category}
       title={item.title}
       description={item.description.slice(0, 150) + "..."}

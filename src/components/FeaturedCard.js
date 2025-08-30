@@ -1,6 +1,7 @@
 import style from "./FeaturedCard.module.css";
 import { Link } from "react-router-dom";
 export default function FeaturedCard({
+  id,
   category,
   title,
   description,
@@ -10,7 +11,7 @@ export default function FeaturedCard({
   image,
 }) {
   return (
-    <Link className={style.link} to="/blogDetail">
+    <Link key={id} className={style.link} to={`/blog/${id}`}>
       <div className={style.featuredCardBox}>
         <img alt={title} src={image} width={400} height={300} />
         <div className={style.discription}>

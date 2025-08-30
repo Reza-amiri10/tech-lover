@@ -23,6 +23,7 @@
 .blogBox p {
   font-size: 0.9rem;
   font-weight: 100;
+  color: #444;
 }
 .blogBox button {
   border: 0;

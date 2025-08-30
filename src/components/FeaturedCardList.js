@@ -5,6 +5,7 @@ export default function FeaturedCardList({ featuredPost }) {
   const featuredData = featuredPost.map((item) => (
     <FeaturedCard
       key={item.id}
+      id={item.id}
       category={item.category}
       title={item.title}
       description={item.description.slice(0, 150) + "..."}
